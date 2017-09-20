@@ -1,24 +1,18 @@
 {>"layouts/master" /}
 
 {<body}
+
  
+    {#books}
+    	<div class="large-2 columns book end">
+    		<img src="/img/{.cover}">
+    		<h4>{.title}</h4>
+    		<p>{.truncText}</p>
+    		<div class="price">Buy it for <span>${.price}</span></div>
+    		<br>
+    		<a href="/books/details/{._id}" class="button small">Book Details</a>
+    	</div>
+    {/books}
     
-    <div class="large-12 columns">
-    	<img src="/img/book4.jpg">
-    	<h4>Professional Node.js</h4>
-    	<p>The best book on technology for starters</p>
-    	<div class="price">Buy it for <span>$19.99</span></div>
-    	<br>
-    	<a href="/books/details/1" class="button small">Book Details</a>
-    </div>
-    <div class="large-12 columns">
-    	<img src="/img/book3.jpg">
-    	<h4>Professional Node.js</h4>
-    	<p>The best book on technology for starters</p>
-    	<div class="price">Buy it for <span>$19.99</span></div>
-    	<br>
-    	<a href="/books/details/1" class="button small">Book Details</a>
-    </div>
-    
-    
+       
 {/body}
